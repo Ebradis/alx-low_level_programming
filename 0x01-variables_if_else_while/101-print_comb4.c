@@ -23,7 +23,7 @@ int main()
 						putchar(a);
 						putchar(b);
 						putchar(c);
-						if (a == 55 & b == 56 & c == 57)
+						if (a == 55 && b == 56 && c == 57)
 						{
 							break;
 						}
