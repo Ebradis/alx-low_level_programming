@@ -9,19 +9,29 @@ int main(void)
 	int a;
 	int b;
 	int c;
-	int arr[3];
 
-	for (a = 0; a < 3; a++)
+	for (a = 48; a < 58; a++)
 	{
-		for (b = 0; b < 3; b++)
+		for (b = 48; b < 58; b++)
 		{
-			for (c = 0; c < 3; c++)
+			if (b > a)
 			{
-				if (a != b && b != c && c != a)
+				for (c = 48; c < 58; c++)
 				{
-					putchar("\n", arr[a], arr[b], arr[c]);
+					if (c > b)
+					{
+						putchar(a, b, c);
+						if (a == 55 && b == 56 && c == 57)
+						{
+							break;
+						}
+						putchar(',');
+						putchar(' ');
+					}
 				}
 			}
 		}
 	}
-}
+	putchar('\n');
+	return (0);
+	}
