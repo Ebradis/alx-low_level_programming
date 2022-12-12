@@ -20,7 +20,9 @@ int main(void)
 				{
 					if (c > b)
 					{
-						putchar(a, b, c);
+						putchar(a);
+						putchar(b);
+						putchar(c);
 						if (a == 55 && b == 56 && c == 57)
 						{
 							break;
