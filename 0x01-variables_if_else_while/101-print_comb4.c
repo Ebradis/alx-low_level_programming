@@ -19,7 +19,7 @@ int main(void)
 			{
 				if (a != b && b != c && c != a)
 				{
-					putchar("[%d %d %d]\n", arr[a], arr[b], arr[c]);
+					putchar("\n", arr[a], arr[b], arr[c]);
 				}
 			}
 		}
