@@ -1,39 +1,27 @@
 #include <stdio.h>
 /**
- * main 
+ * main - that prints all possible different combinations of three digits
  *
  * Return : 0
  */
 int main(void)
 {
-	int a,b,c;
+	int a;
+	int b;
+	int c;
+	int arr[3];
 
-	for (a = 48; a < 58; a++)
+	for (a = 0; a < 3; a++)
 	{
-		for (b = 48; b < 58; b++)
+		for (b = 0; b < 3; b++)
 		{
-			if (b > a)
+			for (c = 0; c < 3; c++)
 			{
-				for (c = 48; c < 58; c++)
+				if (i != j && j != k && k != i)
 				{
-					if (c > b)
-					{
-						putchar(a);
-						putchar(b);
-						putchar(c);
-						if (a == 55 && b == 56 && c == 57)
-						{
-							break;
-						}
-
-						putchar(',');
-						putchar(' ');
-					}
+					putchar("[%d %d %d]\n", arr[a], arr[b], arr[c]);
 				}
 			}
 		}
-
-		putchar('\n');
-		return (0);
-
 	}
+}
