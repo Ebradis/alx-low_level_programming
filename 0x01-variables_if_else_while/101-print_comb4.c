@@ -17,7 +17,7 @@ int main(void)
 		{
 			for (c = 0; c < 3; c++)
 			{
-				if (i != j && j != k && k != i)
+				if (a != b && b != c && c != a)
 				{
 					putchar("[%d %d %d]\n", arr[a], arr[b], arr[c]);
 				}
