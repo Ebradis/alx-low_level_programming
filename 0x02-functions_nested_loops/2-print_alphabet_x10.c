@@ -19,7 +19,7 @@ void print_alphabet_x10(void)
 		while (c <= 'z')
 		{
 			_putchar(c);
-			l++;
+			c++;
 		}
 		_putchar('\n');
 		x++;
